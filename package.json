@@ -1,7 +1,7 @@
 {
-  "name": "crashreporter",
+  "name": "crashreporter-post",
   "version": "1.1.0",
-  "description": "Dump node context into a file on process crash, send it by mail",
+  "description": "Mod of original crashreporter - Dump node context via post to external endpoint on process crash, send it by mail",
   "directories": {
     "example": "example",
     "test": "test"
@@ -23,9 +23,9 @@
   "author": "sdolard@gmail.com, joaquinicolas",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/sdolard/node-crashreporter/issues"
+    "url": "https://github.com/sbeatz/node-crashreporter/issues"
   },
-  "homepage": "https://github.com/sdolard/node-crashreporter",
+  "homepage": "https://github.com/sbeatz/node-crashreporterr",
   "main": "lib/crashreporter.js",
   "keywords": [
     "crash",

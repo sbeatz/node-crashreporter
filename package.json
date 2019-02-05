@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sbeatz/node-crashreporter.git"
+    "url": "git+ssh://git@github.com/sbeatz/node-crashreporter-post.git"
   },
   "author": "sdolard@gmail.com, joaquinicolas",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/sbeatz/node-crashreporter/issues"
+    "url": "https://github.com/sbeatz/node-crashreporter-post/issues"
   },
-  "homepage": "https://github.com/sbeatz/node-crashreporter",
+  "homepage": "https://github.com/sbeatz/node-crashreporter-post",
   "main": "lib/crashreporter.js",
   "keywords": [
     "crash",

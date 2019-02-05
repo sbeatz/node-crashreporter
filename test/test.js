@@ -1,6 +1,6 @@
 var 
 assert = require('assert'),
-crashreporter = require('../lib/crashreporter');
+crashreporter = require('../lib/crashreporter-post');
 
 describe('CrashReporter', function(){
 	describe('When creating a CrashReporter with no param', function(){

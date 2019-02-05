@@ -1,13 +1,13 @@
-# node-crashreporter
+# crashreporter-post
 
-node-crashreporter [![Build Status](https://travis-ci.org/sdolard/node-crashreporter.png?branch=master)](https://travis-ci.org/sdolard/node-crashreporter)[![Build Dependency](https://david-dm.org/sdolard/node-crashreporter.png)](https://david-dm.org/sdolard/node-crashreporter)
 
-Dump node context into a file on process crash, send it by mail
 
-## Installing crashreporter
+Dump node context into a post request on process crash, send it by mail
+
+## Installing crashreporter-post
 
 ```bash
-[sudo] npm install crashreporter
+[sudo] npm install crashreporter-post
 ```
 
 ## Usage
@@ -15,16 +15,16 @@ Dump node context into a file on process crash, send it by mail
 ### Basic
 
 ```javascript
-require('crashreporter');
+require('crashreporter-post');
 ```
 
 ### More
 
 ```javascript
-require('crashreporter').configure({
-    outDir: [your out directory], // default to cwd
+require('crashreporter-post').configure({
+    target: [target URL for the post request], // default to cwd
     exitOnCrash: [true|false] // if you want that crash reporter exit(1) for you, default to true,
-    maxCrashFile: [number] // older files will be removed up, default 5 files are kept
+    appName: [Name to be sent with the post request] // older files will be removed up, default 5 files are kept
 });
 ```
 
@@ -33,7 +33,7 @@ require('crashreporter').configure({
 See <http://www.nodemailer.com/> for support
 
 ```javascript
-require('crashreporter').configure({
+require('crashreporter-post').configure({
     mailEnabled: true,
     mailTransportName: 'SMTP',
     mailTransportConfig: {
@@ -54,7 +54,7 @@ require('crashreporter').configure({
 Hidden Attribute hide items in the email.
 
 ```
-require('crashreporter').configure({
+require('crashreporter-post').configure({
     ...
     hiddenAttributes: ['versions', 'error'],
     ...

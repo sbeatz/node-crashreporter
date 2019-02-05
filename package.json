@@ -26,7 +26,7 @@
     "url": "https://github.com/sbeatz/node-crashreporter-post/issues"
   },
   "homepage": "https://github.com/sbeatz/node-crashreporter-post",
-  "main": "lib/crashreporter.js",
+  "main": "lib/crashreporter-post.js",
   "keywords": [
     "crash",
     "report",
